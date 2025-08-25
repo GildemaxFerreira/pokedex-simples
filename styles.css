@@ -1,0 +1,85 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #e40000;
+    -webkit-text-stroke: 1px #3b4cca;
+    font-size: 3rem;
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    outline: none;
+}
+
+/* Container da Pokédex */
+.pokedex-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+/* Card do Pokémon */
+.pokemon-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.pokemon-card:hover {
+    transform: translateY(-5px);
+}
+
+.pokemon-card .pokemon-id {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    color: #555;
+    display: inline-block;
+}
+
+.pokemon-card img {
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+}
+
+.pokemon-card .pokemon-name {
+    margin: 15px 0 10px;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.pokemon-card .pokemon-type {
+    font-style: italic;
+    color: #777;
+}
